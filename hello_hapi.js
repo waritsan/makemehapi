@@ -13,7 +13,7 @@ const Hapi = require('hapi');
           return "Hello hapi";
         }
       });
-      server.start();
+      await server.start();
       console.log('Server running at: ', server.info.uri);
     } catch (e) {
       console.log(e);
